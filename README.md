@@ -11,14 +11,10 @@ A pipeline of scripts to extract and analyze phage encoded Biosynthetic Gene Clu
     blast
     
 
-#Note that this takes very long to run, 2 days on a 64 core machine with 512gb RAM and results in ~500gb of disc use.
+Note that this takes very long to run, 2 days on a 64 core machine with 512gb RAM and results in ~500gb of disc use. Likely weeks, if at all, on a desktop.
 
-WORKFLOW
+# WORKFLOW
 
 ncbi-genome-download --parallel 64 --format fasta,gff --assembly-level complete   bacteria 
 
 Find-pBGCs.sh refseq/bacteria/
-
-#fish out genomes with hits from all.log
-
-Find-pBGCs.sh pBGCs/bacteria/
