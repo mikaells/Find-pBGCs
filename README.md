@@ -1,6 +1,9 @@
 # Find-pBGCs
 A pipeline of scripts to extract and analyze phage encoded Biosynthetic Gene Clusters (pBGCs)
 
+Now published in Current Biology: https://www.cell.com/current-biology/fulltext/S0960-9822(21)00744-2
+
+
 # Depends on
 
     ncbi-genome-download: https://github.com/kblin/ncbi-genome-download
