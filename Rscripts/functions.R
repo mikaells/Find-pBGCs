@@ -1,3 +1,8 @@
+color.gradient <- function(x, colors=c("grey90","red"), colsteps=100) {
+  return( colorRampPalette(colors) (colsteps) [ findInterval(x, seq(min(x),max(x), length.out=colsteps)) ] )
+}
+
+
 layout.by.attr <- function(graph, wc, cluster.strength=1,layout=layout.auto) {  
   g <- graph.edgelist(get.edgelist(graph)) # create a lightweight copy of graph w/o the attributes.
   E(g)$weight <- 1
